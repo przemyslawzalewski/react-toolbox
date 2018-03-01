@@ -52,14 +52,12 @@
     "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
-    "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-compat": "^1.0.2",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "express": "^4.15.3",
-    "extract-text-webpack-plugin": "^2.1.0",
     "git-dirty": "^1.0.2",
     "glob": "^7.1.2",
     "gulp": "^3.9.1",
@@ -93,10 +91,7 @@
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
     "stylelint-order": "^0.4.4",
-    "typescript": "^2.1.5",
-    "webpack": "^2.6.0",
-    "webpack-dev-middleware": "^1.10.2",
-    "webpack-hot-middleware": "^2.18.0"
+    "typescript": "^2.1.5"
   },
   "engines": {
     "node": ">= 6"
