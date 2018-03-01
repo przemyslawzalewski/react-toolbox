@@ -1,5 +1,3 @@
-import './utils/polyfills'; // Import polyfills for IE11
-
 export { overrideComponentTypeChecker } from './utils/is-component-of-type';
 export { default as AppBar } from './app_bar';
 export { default as Autocomplete } from './autocomplete';
