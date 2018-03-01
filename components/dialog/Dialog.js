@@ -25,6 +25,7 @@ const factory = (Overlay, Button) => {
         <Overlay
           active={props.active}
           className={props.theme.overlay}
+          lockScroll={props.lockScroll}
           onClick={props.onOverlayClick}
           onEscKeyDown={props.onEscKeyDown}
           onMouseDown={props.onOverlayMouseDown}
@@ -58,6 +59,7 @@ const factory = (Overlay, Button) => {
     active: PropTypes.bool,
     children: PropTypes.node,
     className: PropTypes.string,
+    lockScroll: PropTypes.bool,
     onEscKeyDown: PropTypes.func,
     onOverlayClick: PropTypes.func,
     onOverlayMouseDown: PropTypes.func,
