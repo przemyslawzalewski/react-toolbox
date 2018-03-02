@@ -312,8 +312,8 @@
   --color-text: var(--palette-grey-900);
   --color-text-secondary: var(--palette-grey-600);
 
-  --color-primary: var(--palette-indigo-500);
-  --color-primary-dark: var(--palette-indigo-700);
+  --color-primary: #0e85c5;
+  --color-primary-dark: #00669c;
   --color-accent: var(--palette-pink-a200);
   --color-accent-dark: var(--palette-pink-700);
   --color-primary-contrast: var(--color-dark-contrast);
