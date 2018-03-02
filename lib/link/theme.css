@@ -389,8 +389,12 @@
 .link:not(.active) {
   opacity: 0.5;
 }
-.link:hover,
-  .link:active {
+@media (hover: hover) {
+  .link:hover {
+    opacity: 1;
+  }
+}
+.link:active {
   opacity: 1;
 }
 .link > * {

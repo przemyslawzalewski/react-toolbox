@@ -434,8 +434,10 @@
 .dialog > [role='navigation'] > .button {
   color: var(--datepicker-primary-color);
 }
-.dialog > [role='navigation'] > .button:hover {
-  background: var(--datepicker-primary-hover-color);
+@media (hover: hover) {
+  .dialog > [role='navigation'] > .button:hover {
+    background: var(--datepicker-primary-hover-color);
+  }
 }
 .dialog > [role='navigation'] > .button:focus:not(:active) {
   background: var(--datepicker-primary-hover-color);
@@ -516,16 +518,20 @@
   line-height: var(--calendar-row-height);
   width: var(--calendar-row-height);
 }
-.day:hover:not(.active):not(.disabled) > span {
-  background: var(--calendar-primary-hover-color);
-  color: var(--calendar-primary-contrast-color);
+@media (hover: hover) {
+  .day:hover:not(.active):not(.disabled) > span {
+    background: var(--calendar-primary-hover-color);
+    color: var(--calendar-primary-contrast-color);
+  }
 }
 .day.active > span {
   background: var(--calendar-primary-color);
   color: var(--calendar-primary-contrast-color);
 }
-.day:hover:not(.disabled) > span {
-  cursor: pointer;
+@media (hover: hover) {
+  .day:hover:not(.disabled) > span {
+    cursor: pointer;
+  }
 }
 .day.disabled {
   opacity: var(--calendar-day-disable-opacity);

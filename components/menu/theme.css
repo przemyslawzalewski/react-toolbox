@@ -136,9 +136,11 @@
   padding: 0 var(--menu-item-padding);
   position: relative;
 
-  &:not(.disabled):hover {
-    background-color: var(--menu-item-hover-background);
-    cursor: pointer;
+  @media (hover: hover) {
+    &:not(.disabled):hover {
+      background-color: var(--menu-item-hover-background);
+      cursor: pointer;
+    }
   }
 
   &.disabled {

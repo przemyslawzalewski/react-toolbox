@@ -428,8 +428,10 @@
   right: 0;
   width: var(--chip-remove-size);
 }
-.delete:hover .deleteIcon {
-  background: var(--chip-remove-background-hover);
+@media (hover: hover) {
+  .delete:hover .deleteIcon {
+    background: var(--chip-remove-background-hover);
+  }
 }
 .deleteIcon {
   background: var(--chip-remove-background);

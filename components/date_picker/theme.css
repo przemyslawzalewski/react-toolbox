@@ -60,8 +60,10 @@
   & > [role='navigation'] > .button {
     color: var(--datepicker-primary-color);
 
-    &:hover {
-      background: var(--datepicker-primary-hover-color);
+    @media (hover: hover) {
+      &:hover {
+        background: var(--datepicker-primary-hover-color);
+      }
     }
 
     &:focus:not(:active) {
@@ -159,9 +161,11 @@
     width: var(--calendar-row-height);
   }
 
-  &:hover:not(.active):not(.disabled) > span {
-    background: var(--calendar-primary-hover-color);
-    color: var(--calendar-primary-contrast-color);
+  @media (hover: hover) {
+    &:hover:not(.active):not(.disabled) > span {
+      background: var(--calendar-primary-hover-color);
+      color: var(--calendar-primary-contrast-color);
+    }
   }
 
   &.active > span {
@@ -169,8 +173,10 @@
     color: var(--calendar-primary-contrast-color);
   }
 
-  &:hover:not(.disabled) > span {
-    cursor: pointer;
+  @media (hover: hover) {
+    &:hover:not(.disabled) > span {
+      cursor: pointer;
+    }
   }
 
   &.disabled {

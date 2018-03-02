@@ -547,8 +547,10 @@
 .primary:not([disabled]).flat:focus:not(:active), .primary:not([disabled]).toggle:focus:not(:active) {
   background: var(--button-primary-color-hover);
 }
-.primary:not([disabled]).flat:hover {
-  background: var(--button-primary-color-hover);
+@media (hover: hover) {
+  .primary:not([disabled]).flat:hover {
+    background: var(--button-primary-color-hover);
+  }
 }
 .accent:not([disabled]).raised,
   .accent:not([disabled]).floating {
@@ -562,8 +564,10 @@
 .accent:not([disabled]).flat:focus:not(:active), .accent:not([disabled]).toggle:focus:not(:active) {
   background: var(--button-accent-color-hover);
 }
-.accent:not([disabled]).flat:hover {
-  background: var(--button-accent-color-hover);
+@media (hover: hover) {
+  .accent:not([disabled]).flat:hover {
+    background: var(--button-accent-color-hover);
+  }
 }
 .neutral:not([disabled]).raised,
   .neutral:not([disabled]).floating {
@@ -577,8 +581,10 @@
 .neutral:not([disabled]).flat:focus:not(:active), .neutral:not([disabled]).toggle:focus:not(:active) {
   background: var(--button-neutral-color-hover);
 }
-.neutral:not([disabled]).flat:hover {
-  background: var(--button-neutral-color-hover);
+@media (hover: hover) {
+  .neutral:not([disabled]).flat:hover {
+    background: var(--button-neutral-color-hover);
+  }
 }
 .neutral:not([disabled]).inverse.raised,
     .neutral:not([disabled]).inverse.floating {
@@ -592,8 +598,10 @@
 .neutral:not([disabled]).inverse.flat:focus:not(:active), .neutral:not([disabled]).inverse.toggle:focus:not(:active) {
   background: var(--button-neutral-color-hover);
 }
-.neutral:not([disabled]).inverse.flat:hover {
-  background: var(--button-neutral-color-hover);
+@media (hover: hover) {
+  .neutral:not([disabled]).inverse.flat:hover {
+    background: var(--button-neutral-color-hover);
+  }
 }
 .neutral.inverse[disabled] {
   background-color: var(--button-disabled-background-inverse);

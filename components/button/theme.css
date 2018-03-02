@@ -185,8 +185,10 @@
     }
   }
 
-  &.flat:hover {
-    background: var(--button-primary-color-hover);
+  @media (hover: hover) {
+    &.flat:hover {
+      background: var(--button-primary-color-hover);
+    }
   }
 }
 
@@ -206,8 +208,10 @@
     }
   }
 
-  &.flat:hover {
-    background: var(--button-accent-color-hover);
+  @media (hover: hover) {
+    &.flat:hover {
+      background: var(--button-accent-color-hover);
+    }
   }
 }
 
@@ -227,8 +231,10 @@
     }
   }
 
-  &.flat:hover {
-    background: var(--button-neutral-color-hover);
+  @media (hover: hover) {
+    &.flat:hover {
+      background: var(--button-neutral-color-hover);
+    }
   }
 
   &.inverse {
@@ -247,8 +253,10 @@
       }
     }
 
-    &.flat:hover {
-      background: var(--button-neutral-color-hover);
+    @media (hover: hover) {
+      &.flat:hover {
+        background: var(--button-neutral-color-hover);
+      }
     }
   }
 }

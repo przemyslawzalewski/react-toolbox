@@ -40,8 +40,11 @@
   transition-property: background-color;
   transition-timing-function: var(--animation-curve-default);
 
-  &:hover,
-  &.selected:hover { background-color: var(--table-hover-color); }
+  @media (hover: hover) {
+    &:hover,
+    &.selected:hover { background-color: var(--table-hover-color); }
+  }
+
   &.selected { background-color: var(--table-selection-color); }
 }
 
@@ -93,8 +96,10 @@
     color: var(--table-header-sorted-color);
     cursor: pointer;
 
-    &:hover .sortIcon {
-      color: var(--table-header-sorted-icon-hover-color);
+    @media (hover: hover) {
+      &:hover .sortIcon {
+        color: var(--table-header-sorted-icon-hover-color);
+      }
     }
   }
 }

@@ -434,8 +434,10 @@
 .dialog > [role='navigation'] > .button {
   color: var(--timepicker-primary-color);
 }
-.dialog > [role='navigation'] > .button:hover {
-  background: var(--timepicker-primary-hover-color);
+@media (hover: hover) {
+  .dialog > [role='navigation'] > .button:hover {
+    background: var(--timepicker-primary-hover-color);
+  }
 }
 .dialog > [role='navigation'] > .button:focus:not(:active) {
   background: var(--timepicker-primary-hover-color);

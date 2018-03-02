@@ -58,8 +58,10 @@
   & > [role='navigation'] > .button {
     color: var(--timepicker-primary-color);
 
-    &:hover {
-      background: var(--timepicker-primary-hover-color);
+    @media (hover: hover) {
+      &:hover {
+        background: var(--timepicker-primary-hover-color);
+      }
     }
 
     &:focus:not(:active) {

@@ -23,7 +23,12 @@
     opacity: 0.5;
   }
 
-  &:hover,
+  @media (hover: hover) {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   &:active {
     opacity: 1;
   }

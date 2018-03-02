@@ -498,9 +498,11 @@
   padding: 0 var(--menu-item-padding);
   position: relative
 }
-.menuItem:not(.disabled):hover {
-  background-color: var(--menu-item-hover-background);
-  cursor: pointer;
+@media (hover: hover) {
+  .menuItem:not(.disabled):hover {
+    background-color: var(--menu-item-hover-background);
+    cursor: pointer;
+  }
 }
 .menuItem.disabled {
   opacity: 0.5;

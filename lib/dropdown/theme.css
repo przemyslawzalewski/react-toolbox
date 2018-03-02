@@ -519,8 +519,10 @@
   padding: var(--unit);
   position: relative;
 }
-.values > *:hover:not(.disabled) {
-  background-color: var(--dropdown-value-hover-background);
+@media (hover: hover) {
+  .values > *:hover:not(.disabled) {
+    background-color: var(--dropdown-value-hover-background);
+  }
 }
 .values > *.selected {
   color: var(--dropdown-color-primary);

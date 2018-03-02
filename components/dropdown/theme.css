@@ -145,8 +145,10 @@
     padding: var(--unit);
     position: relative;
 
-    &:hover:not(.disabled) {
-      background-color: var(--dropdown-value-hover-background);
+    @media (hover: hover) {
+      &:hover:not(.disabled) {
+        background-color: var(--dropdown-value-hover-background);
+      }
     }
 
     &.selected {
