@@ -403,7 +403,7 @@
   height: var(--table-row-height);
   transition-duration: 0.28s;
   transition-property: background-color;
-  transition-timing-function: var(--animation-curve-default)
+  transition-timing-function: var(--animation-curve-default);
 }
 @media (hover: hover) {
   .row:hover,

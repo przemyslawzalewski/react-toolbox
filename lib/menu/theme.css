@@ -496,7 +496,7 @@
   height: var(--menu-item-height);
   overflow: hidden;
   padding: 0 var(--menu-item-padding);
-  position: relative
+  position: relative;
 }
 @media (hover: hover) {
   .menuItem:not(.disabled):hover {
