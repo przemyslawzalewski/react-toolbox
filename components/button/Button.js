@@ -28,6 +28,7 @@ const factory = (ripple, FontIcon) => {
       onMouseUp: PropTypes.func,
       primary: PropTypes.bool,
       raised: PropTypes.bool,
+      tagName: PropTypes.any,
       theme: PropTypes.shape({
         accent: PropTypes.string,
         button: PropTypes.string,
@@ -94,11 +95,12 @@ const factory = (ripple, FontIcon) => {
         neutral,
         primary,   // eslint-disable-line
         raised,    // eslint-disable-line
+        tagName = 'button',
         theme,
         type,
         ...others
       } = this.props;
-      const element = href ? 'a' : 'button';
+      const element = href ? 'a' : tagName;
       const level = this.getLevel();
       const shape = this.getShape();
       const mouseEvents = {
@@ -119,7 +121,7 @@ const factory = (ripple, FontIcon) => {
         ref: (node) => { this.buttonNode = node; },
         className: classes,
         disabled: this.props.disabled,
-        type: !href ? type : null,
+        type,
         'data-react-toolbox': 'button',
       };
 
