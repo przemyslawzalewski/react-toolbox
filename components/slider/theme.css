@@ -183,44 +183,9 @@
     }
 
     &:not(.pinned) {
-      &.ring .progress {
-        left: calc(var(--slider-knob-size) / 2 + (var(--slider-knob-size) - var(--slider-empty-knob-border) * 2) / 2);
-        width: calc(100% - ((var(--slider-knob-size) - var(--slider-empty-knob-border) * 2) / 2));
-      }
-
       & .innerknob {
         height: 100%;
         transform: translateZ(0);
-        width: 100%;
-      }
-    }
-  }
-
-  &.ring {
-    & .innerknob {
-      background-color: transparent;
-      border: var(--slider-empty-knob-border) solid var(--color-divider);
-
-      &::before {
-        background-color: var(--slider-main-color);
-      }
-    }
-
-    & .progress {
-      left: calc(var(--slider-knob-size) / 2 + var(--slider-empty-knob-border) * 2);
-      transition:
-        left 0.18s ease,
-        width 0.18s ease;
-      width: calc(100% - var(--slider-empty-knob-border) * 2);
-    }
-
-    &.pinned {
-      & .innerknob {
-        background-color: var(--color-background);
-      }
-
-      & .progress {
-        left: calc(var(--slider-knob-size) / 2);
         width: 100%;
       }
     }

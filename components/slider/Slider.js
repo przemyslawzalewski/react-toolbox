@@ -36,7 +36,6 @@ const factory = (ProgressBar, Input) => {
         pinned: PropTypes.string,
         pressed: PropTypes.string,
         progress: PropTypes.string,
-        ring: PropTypes.string,
         slider: PropTypes.string,
         snap: PropTypes.string,
         snaps: PropTypes.string,
@@ -278,7 +277,6 @@ const factory = (ProgressBar, Input) => {
         [theme.disabled]: this.props.disabled,
         [theme.pinned]: this.props.pinned,
         [theme.pressed]: this.state.pressed,
-        [theme.ring]: this.props.value === this.props.min,
       }, this.props.className);
 
       return (
