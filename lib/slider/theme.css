@@ -350,12 +350,12 @@
   --animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
   --animation-curve-default: var(--animation-curve-fast-out-slow-in);
 
-  --z-index-highest: 300;
-  --z-index-higher: 200;
-  --z-index-high: 100;
+  --z-index-highest: 4;
+  --z-index-higher: 3;
+  --z-index-high: 2;
   --z-index-normal: 1;
-  --z-index-low: -100;
-  --z-index-lower: -200
+  --z-index-low: -1;
+  --z-index-lower: -2
 }
 :root {
   --slider-main-color: var(--color-primary);
@@ -536,33 +536,8 @@
   transform: scale(1) translate(0, calc(-1 * var(--slider-pin-elevation)));
   transition-delay: 100ms;
 }
-.slider.pressed:not(.pinned).ring .progress {
-  left: calc(var(--slider-knob-size) / 2 + (var(--slider-knob-size) - var(--slider-empty-knob-border) * 2) / 2);
-  width: calc(100% - ((var(--slider-knob-size) - var(--slider-empty-knob-border) * 2) / 2));
-}
 .slider.pressed:not(.pinned) .innerknob {
   height: 100%;
   transform: translateZ(0);
-  width: 100%;
-}
-.slider.ring .innerknob {
-  background-color: transparent;
-  border: var(--slider-empty-knob-border) solid var(--color-divider);
-}
-.slider.ring .innerknob::before {
-  background-color: var(--slider-main-color);
-}
-.slider.ring .progress {
-  left: calc(var(--slider-knob-size) / 2 + var(--slider-empty-knob-border) * 2);
-  transition:
-        left 0.18s ease,
-        width 0.18s ease;
-  width: calc(100% - var(--slider-empty-knob-border) * 2);
-}
-.slider.ring.pinned .innerknob {
-  background-color: var(--color-background);
-}
-.slider.ring.pinned .progress {
-  left: calc(var(--slider-knob-size) / 2);
   width: 100%;
 }
