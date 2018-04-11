@@ -36,7 +36,6 @@ const factory = (Overlay, Button) => {
         />
         <div data-react-toolbox="dialog" className={className}>
           <section role="body" className={props.theme.body}>
-            {props.title ? <h6 className={props.theme.title}>{props.title}</h6> : null}
             {props.children}
           </section>
           {actions.length
@@ -73,10 +72,8 @@ const factory = (Overlay, Button) => {
       navigation: PropTypes.string,
       overflow: PropTypes.string,
       overlay: PropTypes.string,
-      title: PropTypes.string,
       wrapper: PropTypes.string,
     }),
-    title: PropTypes.string,
     type: PropTypes.string,
   };
 
