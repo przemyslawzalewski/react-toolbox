@@ -109,3 +109,53 @@
   padding-left: var(--dialog-navigation-padding);
   padding-right: var(--dialog-navigation-padding);
 }
+
+.body {
+  overflow: hidden;
+  padding: 0;
+}
+
+.body p {
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: initial;
+  line-height: 1.7em;
+  margin: 0;
+}
+
+.title,
+.navigation {
+  margin: 0;
+  padding: 16px;
+}
+
+.navigation {
+  padding: 8px;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.large {
+  max-width: 1024px;
+}
+
+.normal {
+  width: 600px;
+}
+
+.small {
+  min-width: 320px;
+  width: 480px;
+}
+
+.fullscreen {
+  border-radius: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+}
