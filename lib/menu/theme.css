@@ -379,11 +379,11 @@
   display: inline-block;
   position: relative;
   text-align: center;
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .iconMenu *,
     .iconMenu *::after,

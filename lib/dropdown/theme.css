@@ -393,11 +393,11 @@
 }
 .dropdown {
   position: relative;
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .dropdown *,
     .dropdown *::after,

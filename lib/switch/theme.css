@@ -386,11 +386,11 @@
   margin-bottom: var(--switch-field-margin-bottom);
   position: relative;
   white-space: normal;
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%;
 }
 .field *,
     .field *::after,
@@ -419,7 +419,21 @@
   transition-duration: 0.28s;
   transition-property: left;
   transition-timing-function: var(--animation-curve-default);
-  width: var(--switch-thumb-size)
+  width: var(--switch-thumb-size);
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
+}
+.thumb *,
+    .thumb *::after,
+    .thumb *::before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -webkit-touch-callout: none;
 }
 .thumb .ripple {
   background-color: var(--switch-color);

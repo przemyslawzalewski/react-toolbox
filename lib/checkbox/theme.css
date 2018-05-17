@@ -378,11 +378,11 @@
   margin-bottom: var(--checkbox-field-margin-bottom);
   position: relative;
   white-space: nowrap;
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .field *,
     .field *::after,
@@ -443,7 +443,21 @@
   transition-property: background-color;
   transition-timing-function: var(--animation-curve-default);
   vertical-align: top;
-  width: var(--checkbox-size)
+  width: var(--checkbox-size);
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
+}
+.check *,
+    .check *::after,
+    .check *::before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -webkit-touch-callout: none;
 }
 .check.checked {
   background-color: var(--checkbox-color);

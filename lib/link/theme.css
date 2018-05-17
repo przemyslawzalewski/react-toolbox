@@ -371,11 +371,11 @@
   line-height: 1.5;
   position: relative;
   transition: opacity var(--animation-duration) var(--animation-curve-default);
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .link *,
     .link *::after,

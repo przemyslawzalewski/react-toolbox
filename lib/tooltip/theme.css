@@ -383,11 +383,11 @@
   transform-origin: top left;
   transition: var(--animation-curve-default) var(--tooltip-animation-duration) transform;
   z-index: var(--z-index-higher);
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .tooltip *,
     .tooltip *::after,

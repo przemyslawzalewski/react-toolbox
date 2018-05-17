@@ -406,11 +406,11 @@
     background-color 0.2s var(--animation-curve-default),
     color 0.2s var(--animation-curve-default);
   white-space: nowrap;
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .button *,
     .button *::after,

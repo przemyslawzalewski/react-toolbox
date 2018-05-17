@@ -407,11 +407,11 @@
   transition-duration: 0.5s;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .appBar *,
     .appBar *::after,

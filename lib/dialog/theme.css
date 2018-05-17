@@ -404,11 +404,11 @@
   top: 0;
   width: 100vw;
   z-index: var(--z-index-higher);
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%;
 }
 .wrapper *,
     .wrapper *::after,

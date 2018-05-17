@@ -382,11 +382,11 @@
   right: var(--snackbar-horizontal-offset);
   transition: all var(--animation-duration) var(--animation-curve-default) var(--animation-duration);
   z-index: var(--z-index-higher);
-    box-sizing: border-box;
-    font-family: var(--preferred-font);
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-size-adjust: 100%
+  box-sizing: border-box;
+  font-family: var(--preferred-font);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%
 }
 .snackbar *,
     .snackbar *::after,
