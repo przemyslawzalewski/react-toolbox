@@ -106,8 +106,9 @@ const tooltipFactory = (options = {}) => {
 
       activate({ top, left, position }) {
         if (this.timeout) clearTimeout(this.timeout);
+        this.setState({ visible: true, position });
         this.timeout = setTimeout(() => {
-          this.setState({ visible: true, position, active: true, top, left });
+          this.setState({ active: true, top, left });
         }, this.props.tooltipDelay);
       }
 
@@ -217,7 +218,11 @@ const tooltipFactory = (options = {}) => {
                 ref={(node) => { this.tooltipNode = node; }}
                 className={_className}
                 data-react-toolbox="tooltip"
-                style={{ top, left }}
+                style={{
+                  top,
+                  left,
+                  ...(top === undefined || left === undefined ? { display: 'none' } : {}),
+                }}
               >
                 <span className={theme.tooltipInner}>{tooltip}</span>
               </span>
