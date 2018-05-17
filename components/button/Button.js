@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { BUTTON } from '../identifiers';
-import InjectFontIcon from '../font_icon/FontIcon';
 import rippleFactory from '../ripple/Ripple';
 
-const factory = (ripple, FontIcon) => {
+const factory = (ripple) => {
   class Button extends Component {
     static propTypes = {
       accent: PropTypes.bool,
@@ -16,10 +15,7 @@ const factory = (ripple, FontIcon) => {
       flat: PropTypes.bool,
       floating: PropTypes.bool,
       href: PropTypes.string,
-      icon: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.element,
-      ]),
+      icon: PropTypes.element,
       inverse: PropTypes.bool,
       label: PropTypes.string,
       mini: PropTypes.bool,
@@ -126,7 +122,7 @@ const factory = (ripple, FontIcon) => {
       };
 
       const buttonElement = React.createElement(element, props,
-        icon ? <FontIcon className={theme.icon} value={icon} /> : null,
+        icon,
         label,
         children,
       );
@@ -140,7 +136,7 @@ const factory = (ripple, FontIcon) => {
   return ripple(Button);
 };
 
-const Button = factory(rippleFactory({ centered: false }), InjectFontIcon);
+const Button = factory(rippleFactory({ centered: false }));
 export default themr(BUTTON)(Button);
 export { factory as buttonFactory };
 export { Button };

@@ -1,6 +1,5 @@
 import { themr } from 'react-css-themr';
 import { LIST } from '../identifiers';
-import { Avatar } from '../avatar';
 import { Checkbox } from '../checkbox';
 import { ListItemText } from './ListItemText';
 import { ListItemAction } from './ListItemAction';
@@ -24,7 +23,7 @@ const ThemedListDivider = applyTheme(ListDivider);
 const ThemedListItemContent = applyTheme(listItemContentFactory(ThemedListItemText));
 const ThemedListItemActions = applyTheme(listItemActionsFactory(ThemedListItemAction));
 const ThemedListItemLayout = applyTheme(
-  listItemLayoutFactory(Avatar, ThemedListItemContent, ThemedListItemActions),
+  listItemLayoutFactory(ThemedListItemContent, ThemedListItemActions),
 );
 const ThemedListCheckbox = applyTheme(listCheckboxFactory(Checkbox, ThemedListItemContent));
 const ThemedListItem = applyTheme(

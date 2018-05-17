@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { MENU } from '../identifiers';
-import { FontIcon } from '../font_icon/FontIcon';
 import rippleFactory from '../ripple/Ripple';
 
 const factory = (ripple) => {
@@ -60,7 +59,6 @@ const factory = (ripple) => {
 
       return (
         <li {...others} data-react-toolbox="menu-item" className={className} onClick={this.handleClick}>
-          {icon ? <FontIcon value={icon} className={theme.icon} /> : null}
           <span className={theme.caption}>{caption}</span>
           {shortcut ? <small className={theme.shortcut}>{shortcut}</small> : null}
           {children}

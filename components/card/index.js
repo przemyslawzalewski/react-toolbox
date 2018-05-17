@@ -5,10 +5,9 @@ import { CardActions } from './CardActions';
 import { CardMedia } from './CardMedia';
 import { CardText } from './CardText';
 import { cardTitleFactory } from './CardTitle';
-import { Avatar } from '../avatar';
 import theme from './theme.css';
 
-const CardTitle = cardTitleFactory(Avatar);
+const CardTitle = cardTitleFactory();
 const ThemedCard = themr(CARD, theme)(Card);
 const ThemedCardActions = themr(CARD, theme)(CardActions);
 const ThemedCardMedia = themr(CARD, theme)(CardMedia);

@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { BUTTON } from '../identifiers';
-import InjectFontIcon from '../font_icon/FontIcon';
 import rippleFactory from '../ripple/Ripple';
 
-const factory = (ripple, FontIcon) => {
+const factory = (ripple) => {
   class IconButton extends Component {
     static propTypes = {
       accent: PropTypes.bool,
@@ -14,10 +13,7 @@ const factory = (ripple, FontIcon) => {
       className: PropTypes.string,
       disabled: PropTypes.bool,
       href: PropTypes.string,
-      icon: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.element,
-      ]),
+      icon: PropTypes.element,
       inverse: PropTypes.bool,
       neutral: PropTypes.bool,
       onMouseLeave: PropTypes.func,
@@ -97,9 +93,7 @@ const factory = (ripple, FontIcon) => {
         'data-react-toolbox': 'button',
       };
 
-      const iconElement = typeof icon === 'string'
-        ? <FontIcon className={theme.icon} value={icon} />
-        : icon;
+      const iconElement = icon;
 
       return React.createElement(element, props,
         icon && iconElement,
@@ -111,7 +105,7 @@ const factory = (ripple, FontIcon) => {
   return ripple(IconButton);
 };
 
-const IconButton = factory(rippleFactory({ centered: true }), InjectFontIcon);
+const IconButton = factory(rippleFactory({ centered: true }));
 export default themr(BUTTON)(IconButton);
 export { factory as iconButtonFactory };
 export { IconButton };

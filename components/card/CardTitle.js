@@ -3,18 +3,16 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { CARD } from '../identifiers';
-import InjectAvatar from '../avatar/Avatar';
 
-const factory = (Avatar) => {
-  const CardTitle = ({ avatar, children, className, subtitle, theme, title, ...other }) => {
+const factory = () => {
+  const CardTitle = ({ children, className, subtitle, theme, title, ...other }) => {
     const classes = classnames(theme.cardTitle, {
-      [theme.small]: avatar,
-      [theme.large]: !avatar,
+      [theme.small]: false,
+      [theme.large]: true,
     }, className);
 
     return (
       <div className={classes} {...other}>
-        {typeof avatar === 'string' ? <Avatar image={avatar} theme={theme} /> : avatar}
         <div>
           {title && <h5 className={theme.title}>{title}</h5>}
           {children && typeof children === 'string' && (
@@ -28,10 +26,6 @@ const factory = (Avatar) => {
   };
 
   CardTitle.propTypes = {
-    avatar: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.element,
-    ]),
     children: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.element,
@@ -57,7 +51,7 @@ const factory = (Avatar) => {
   return CardTitle;
 };
 
-const CardTitle = factory(InjectAvatar);
+const CardTitle = factory();
 export default themr(CARD)(CardTitle);
 export { CardTitle };
 export { factory as cardTitleFactory };

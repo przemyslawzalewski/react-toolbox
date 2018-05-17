@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { INPUT } from '../identifiers';
-import InjectedFontIcon from '../font_icon/FontIcon';
 
-const factory = (FontIcon) => {
+const factory = () => {
   class Input extends React.Component {
     static propTypes = {
       children: PropTypes.node,
@@ -206,7 +205,6 @@ const factory = (FontIcon) => {
       return (
         <div data-react-toolbox="input" className={className}>
           {React.createElement(multiline ? 'textarea' : 'input', inputElementProps)}
-          {icon ? <FontIcon className={theme.icon} value={icon} /> : null}
           <span className={theme.bar} />
           {labelText
             ? <label className={labelClassName}>
@@ -226,7 +224,7 @@ const factory = (FontIcon) => {
   return Input;
 };
 
-const Input = factory(InjectedFontIcon);
+const Input = factory();
 export default themr(INPUT)(Input);
 export { factory as inputFactory };
 export { Input };

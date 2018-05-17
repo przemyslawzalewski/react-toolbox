@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { BUTTON } from '../identifiers';
-import InjectFontIcon from '../font_icon/FontIcon';
 import rippleFactory from '../ripple/Ripple';
 
-const factory = (ripple, FontIcon) => {
+const factory = (ripple) => {
   class SimpleBrowseButton extends Component {
     static propTypes = {
       accent: PropTypes.bool,
@@ -127,7 +126,7 @@ const factory = (ripple, FontIcon) => {
       };
 
       return React.createElement(element, props,
-          icon ? <FontIcon className={theme.icon} value={icon} /> : null,
+          icon,
         <span>{label}</span>,
         <input
           className={classes}
@@ -144,7 +143,7 @@ const factory = (ripple, FontIcon) => {
   return ripple(SimpleBrowseButton);
 };
 
-const BrowseButton = factory(rippleFactory({ centered: false }), InjectFontIcon);
+const BrowseButton = factory(rippleFactory({ centered: false }));
 export default themr(BUTTON)(BrowseButton);
 export { factory as browseButtonFactory };
 export { BrowseButton };
