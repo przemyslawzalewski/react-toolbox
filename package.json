@@ -65,6 +65,7 @@
     "gulp-rimraf": "^0.2.1",
     "identity-obj-proxy": "^3.0.0",
     "lint-staged": "^3.4.2",
+    "npm-check-updates": "2.14.2",
     "normalize.css": "^7.0.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-each": "^0.10.0",
@@ -91,7 +92,9 @@
     "clean": "rimraf ./lib",
     "css": "cpx \"./components/**/*.css\" ./lib",
     "prebuild": "npm run clean",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "update": "ncu --upgradeAll -a",
+    "update:check": "ncu"
   },
   "license": "MIT",
   "peerDependencies": {
