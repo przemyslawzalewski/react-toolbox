@@ -40,55 +40,11 @@
   &.pinned {
     box-shadow: none;
   }
-
-  &.clipped {
-    height: calc(100vh - var(--appbar-height));
-    padding-top: calc(0.5 * var(--unit));
-    top: var(--appbar-height);
-
-    @media screen and (--xxs-viewport) and (--portrait) {
-      height: calc(100vh - var(--appbar-height-m-portrait));
-      top: var(--appbar-height-m-portrait);
-    }
-
-    @media screen and (--xs-viewport) and (--landscape) {
-      height: calc(100vh - var(--appbar-height-m-landscape));
-      top: var(--appbar-height-m-landscape);
-    }
-  }
 }
 
 .appbarInner,
 .panel {
   transition: var(--layout-side-transition);
-}
-
-.appbarFixed {
-  &.appbarAppBar {
-    z-index: var(--z-index-high);
-  }
-
-  & .panel {
-    height: calc(100vh - var(--appbar-height));
-    max-height: calc(100vh - var(--appbar-height));
-    top: var(--appbar-height);
-
-    &:not(.bodyScroll) {
-      overflow-y: scroll;
-    }
-
-    @media screen and (--xxs-viewport) and (--portrait) {
-      height: calc(100vh - var(--appbar-height-m-portrait));
-      max-height: calc(100vh - var(--appbar-height-m-portrait));
-      top: var(--appbar-height-m-portrait);
-    }
-
-    @media screen and (--xs-viewport) and (--landscape) {
-      height: calc(100vh - var(--appbar-height-m-landscape));
-      max-height: calc(100vh - var(--appbar-height-m-landscape));
-      top: var(--appbar-height-m-landscape);
-    }
-  }
 }
 
 .navDrawerPinned {
