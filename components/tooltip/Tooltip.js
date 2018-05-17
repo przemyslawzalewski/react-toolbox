@@ -106,9 +106,8 @@ const tooltipFactory = (options = {}) => {
 
       activate({ top, left, position }) {
         if (this.timeout) clearTimeout(this.timeout);
-        this.setState({ visible: true, position });
         this.timeout = setTimeout(() => {
-          this.setState({ active: true, top, left });
+          this.setState({ visible: true, position, active: true, top, left });
         }, this.props.tooltipDelay);
       }
 
