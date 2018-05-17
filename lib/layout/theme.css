@@ -491,15 +491,9 @@
 .navDrawerPinned .panel {
   left: var(--drawer-mobile-width);
 }
-.navDrawerPinned:not(.navDrawerClipped) .appbarAppBar {
-  padding-left: calc(var(--drawer-mobile-width) + var(--appbar-h-padding));
-}
 @media screen and (--larger-than-xs-viewport) {
   .navDrawerPinned .panel {
     left: var(--drawer-desktop-width);
-  }
-  .navDrawerPinned:not(.navDrawerClipped) .appbarAppBar {
-    padding-left: calc(var(--drawer-desktop-width) + var(--appbar-h-padding));
   }
 }
 .navDrawerClipped .navDrawerWrapper {
@@ -512,15 +506,9 @@
 .sidebarPinned .panel {
   right: var(--drawer-mobile-width);
 }
-.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-  padding-right: calc(var(--drawer-mobile-width) + var(--appbar-h-padding));
-}
 @media screen and (--larger-than-xs-viewport) {
   .sidebarPinned .panel {
     right: var(--drawer-desktop-width);
-  }
-  .sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--drawer-desktop-width) + var(--appbar-h-padding));
   }
 }
 .sidebarClipped .sidebarWrapper {
@@ -537,9 +525,6 @@
   .sidebarWidth1.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 1);
   }
-  .sidebarWidth1.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 1 + var(--appbar-h-padding));
-  }
 }
 .sidebarWidth2 .sidebarDrawer {
   width: 100%;
@@ -550,9 +535,6 @@
   }
   .sidebarWidth2.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 2);
-  }
-  .sidebarWidth2.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 2 + var(--appbar-h-padding));
   }
 }
 .sidebarWidth3 .sidebarDrawer {
@@ -565,9 +547,6 @@
   .sidebarWidth3.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 3);
   }
-  .sidebarWidth3.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 3 + var(--appbar-h-padding));
-  }
 }
 .sidebarWidth4 .sidebarDrawer {
   width: 100%;
@@ -578,9 +557,6 @@
   }
   .sidebarWidth4.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 4);
-  }
-  .sidebarWidth4.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 4 + var(--appbar-h-padding));
   }
 }
 .sidebarWidth5 .sidebarDrawer {
@@ -593,9 +569,6 @@
   .sidebarWidth5.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 5);
   }
-  .sidebarWidth5.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 5 + var(--appbar-h-padding));
-  }
 }
 .sidebarWidth6 .sidebarDrawer {
   width: 100%;
@@ -606,9 +579,6 @@
   }
   .sidebarWidth6.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 6);
-  }
-  .sidebarWidth6.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 6 + var(--appbar-h-padding));
   }
 }
 .sidebarWidth7 .sidebarDrawer {
@@ -621,9 +591,6 @@
   .sidebarWidth7.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 7);
   }
-  .sidebarWidth7.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 7 + var(--appbar-h-padding));
-  }
 }
 .sidebarWidth8 .sidebarDrawer {
   width: 100%;
@@ -634,9 +601,6 @@
   }
   .sidebarWidth8.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 8);
-  }
-  .sidebarWidth8.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 8 + var(--appbar-h-padding));
   }
 }
 .sidebarWidth9 .sidebarDrawer {
@@ -649,9 +613,6 @@
   .sidebarWidth9.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 9);
   }
-  .sidebarWidth9.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 9 + var(--appbar-h-padding));
-  }
 }
 .sidebarWidth10 .sidebarDrawer {
   width: 100%;
@@ -662,9 +623,6 @@
   }
   .sidebarWidth10.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 10);
-  }
-  .sidebarWidth10.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 10 + var(--appbar-h-padding));
   }
 }
 .sidebarWidth11 .sidebarDrawer {
@@ -677,9 +635,6 @@
   .sidebarWidth11.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 11);
   }
-  .sidebarWidth11.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 11 + var(--appbar-h-padding));
-  }
 }
 .sidebarWidth12 .sidebarDrawer {
   width: 100%;
@@ -691,9 +646,6 @@
   .sidebarWidth12.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 12);
   }
-  .sidebarWidth12.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 12 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
   .sidebarWidth1 .sidebarDrawer {
@@ -702,9 +654,6 @@
   .sidebarWidth1.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 1);
   }
-  .sidebarWidth1.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 1 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth1 .sidebarDrawer {
@@ -712,9 +661,6 @@
   }
   .sidebarWidth1.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 1);
-  }
-  .sidebarWidth1.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 1 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -724,9 +670,6 @@
   .sidebarWidth2.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 2);
   }
-  .sidebarWidth2.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 2 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth2 .sidebarDrawer {
@@ -734,9 +677,6 @@
   }
   .sidebarWidth2.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 2);
-  }
-  .sidebarWidth2.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 2 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -746,9 +686,6 @@
   .sidebarWidth3.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 3);
   }
-  .sidebarWidth3.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 3 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth3 .sidebarDrawer {
@@ -756,9 +693,6 @@
   }
   .sidebarWidth3.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 3);
-  }
-  .sidebarWidth3.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 3 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -768,9 +702,6 @@
   .sidebarWidth4.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 4);
   }
-  .sidebarWidth4.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 4 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth4 .sidebarDrawer {
@@ -778,9 +709,6 @@
   }
   .sidebarWidth4.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 4);
-  }
-  .sidebarWidth4.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 4 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -790,9 +718,6 @@
   .sidebarWidth5.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 5);
   }
-  .sidebarWidth5.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 5 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth5 .sidebarDrawer {
@@ -800,9 +725,6 @@
   }
   .sidebarWidth5.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 5);
-  }
-  .sidebarWidth5.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 5 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -812,9 +734,6 @@
   .sidebarWidth6.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 6);
   }
-  .sidebarWidth6.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 6 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth6 .sidebarDrawer {
@@ -822,9 +741,6 @@
   }
   .sidebarWidth6.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 6);
-  }
-  .sidebarWidth6.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 6 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -834,9 +750,6 @@
   .sidebarWidth7.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 7);
   }
-  .sidebarWidth7.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 7 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth7 .sidebarDrawer {
@@ -844,9 +757,6 @@
   }
   .sidebarWidth7.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 7);
-  }
-  .sidebarWidth7.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 7 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -856,9 +766,6 @@
   .sidebarWidth8.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 8);
   }
-  .sidebarWidth8.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 8 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth8 .sidebarDrawer {
@@ -866,9 +773,6 @@
   }
   .sidebarWidth8.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 8);
-  }
-  .sidebarWidth8.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 8 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
@@ -878,9 +782,6 @@
   .sidebarWidth9.sidebarPinned .panel {
     right: calc(var(--standard-increment-mobile) * 9);
   }
-  .sidebarWidth9.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-mobile) * 9 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
   .sidebarWidth9 .sidebarDrawer {
@@ -888,9 +789,6 @@
   }
   .sidebarWidth9.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 9);
-  }
-  .sidebarWidth9.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 9 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
@@ -900,9 +798,6 @@
   .sidebarWidth1.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 1);
   }
-  .sidebarWidth1.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 1 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
   .sidebarWidth2 .sidebarDrawer {
@@ -910,9 +805,6 @@
   }
   .sidebarWidth2.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 2);
-  }
-  .sidebarWidth2.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 2 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
@@ -922,9 +814,6 @@
   .sidebarWidth3.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 3);
   }
-  .sidebarWidth3.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 3 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
   .sidebarWidth4 .sidebarDrawer {
@@ -932,9 +821,6 @@
   }
   .sidebarWidth4.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 4);
-  }
-  .sidebarWidth4.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 4 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
@@ -944,9 +830,6 @@
   .sidebarWidth5.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 5);
   }
-  .sidebarWidth5.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 5 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
   .sidebarWidth6 .sidebarDrawer {
@@ -954,9 +837,6 @@
   }
   .sidebarWidth6.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 6);
-  }
-  .sidebarWidth6.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 6 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
@@ -966,9 +846,6 @@
   .sidebarWidth7.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 7);
   }
-  .sidebarWidth7.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 7 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
   .sidebarWidth8 .sidebarDrawer {
@@ -976,9 +853,6 @@
   }
   .sidebarWidth8.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 8);
-  }
-  .sidebarWidth8.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 8 + var(--appbar-h-padding));
   }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
@@ -988,9 +862,6 @@
   .sidebarWidth9.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 9);
   }
-  .sidebarWidth9.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 9 + var(--appbar-h-padding));
-  }
 }
 @media screen and (--larger-than-sm-tablet-viewport) {
   .sidebarWidth10 .sidebarDrawer {
@@ -998,9 +869,6 @@
   }
   .sidebarWidth10.sidebarPinned .panel {
     right: calc(var(--standard-increment-desktop) * 10);
-  }
-  .sidebarWidth10.sidebarPinned:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(var(--standard-increment-desktop) * 10 + var(--appbar-h-padding));
   }
 }
 .sidebarWidth25 .sidebarDrawer {
@@ -1028,17 +896,11 @@
     .sidebarWidth25 .sidebarDrawer {
     width: calc(25 * 1%);
   }
-    .sidebarWidth25:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(calc(25 * 1%) + var(--appbar-h-padding));
-  }
     .sidebarWidth33 .panel {
     right: calc(33 * 1%);
   }
     .sidebarWidth33 .sidebarDrawer {
     width: calc(33 * 1%);
-  }
-    .sidebarWidth33:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(calc(33 * 1%) + var(--appbar-h-padding));
   }
     .sidebarWidth50 .panel {
     right: calc(50 * 1%);
@@ -1046,17 +908,11 @@
     .sidebarWidth50 .sidebarDrawer {
     width: calc(50 * 1%);
   }
-    .sidebarWidth50:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(calc(50 * 1%) + var(--appbar-h-padding));
-  }
     .sidebarWidth66 .panel {
     right: calc(66 * 1%);
   }
     .sidebarWidth66 .sidebarDrawer {
     width: calc(66 * 1%);
-  }
-    .sidebarWidth66:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(calc(66 * 1%) + var(--appbar-h-padding));
   }
     .sidebarWidth75 .panel {
     right: calc(75 * 1%);
@@ -1064,16 +920,10 @@
     .sidebarWidth75 .sidebarDrawer {
     width: calc(75 * 1%);
   }
-    .sidebarWidth75:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(calc(75 * 1%) + var(--appbar-h-padding));
-  }
     .sidebarWidth100 .panel {
     right: calc(100 * 1%);
   }
     .sidebarWidth100 .sidebarDrawer {
     width: calc(100 * 1%);
-  }
-    .sidebarWidth100:not(.sidebarClipped) .appbarAppBar {
-    padding-right: calc(calc(100 * 1%) + var(--appbar-h-padding));
   }
 }
