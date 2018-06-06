@@ -51,7 +51,6 @@ const factory = (ripple) => {
       neutral: true,
       primary: false,
       raised: false,
-      type: 'button',
     };
 
     getLevel = () => {
