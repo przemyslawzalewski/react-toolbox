@@ -67,7 +67,6 @@ const factory = () => {
       floating: true,
       multiline: false,
       required: false,
-      role: 'input',
       type: 'text',
     };
 
