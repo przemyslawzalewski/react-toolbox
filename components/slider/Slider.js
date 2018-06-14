@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
@@ -11,7 +11,7 @@ import InjectProgressBar from '../progress_bar/ProgressBar';
 import InjectInput from '../input/Input';
 
 const factory = (ProgressBar, Input) => {
-  class Slider extends Component {
+  class Slider extends PureComponent {
     static propTypes = {
       buffer: PropTypes.number,
       className: PropTypes.string,

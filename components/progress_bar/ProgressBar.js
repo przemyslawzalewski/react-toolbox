@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { PROGRESS_BAR } from '../identifiers';
 import prefixer from '../utils/prefixer';
 
-class ProgressBar extends Component {
+class ProgressBar extends PureComponent {
   static propTypes = {
     buffer: PropTypes.number,
     className: PropTypes.string,

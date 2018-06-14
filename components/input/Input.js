@@ -5,7 +5,7 @@ import { themr } from 'react-css-themr';
 import { INPUT } from '../identifiers';
 
 const factory = () => {
-  class Input extends React.Component {
+  class Input extends React.PureComponent {
     static propTypes = {
       children: PropTypes.node,
       className: PropTypes.string,

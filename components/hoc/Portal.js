@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import styleShape from 'react-style-proptype';
 
-class Portal extends Component {
+class Portal extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,

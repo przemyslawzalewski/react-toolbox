@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
@@ -8,7 +8,7 @@ import InjectListItemText from './ListItemText';
 const types = ['auto', 'normal', 'large'];
 
 const factory = (ListItemText) => {
-  class ListItemContent extends Component {
+  class ListItemContent extends PureComponent {
     static propTypes = {
       caption: PropTypes.oneOfType([
         PropTypes.string,

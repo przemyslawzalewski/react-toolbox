@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
@@ -6,7 +6,7 @@ import { BUTTON } from '../identifiers';
 import rippleFactory from '../ripple/Ripple';
 
 const factory = (ripple) => {
-  class SimpleBrowseButton extends Component {
+  class SimpleBrowseButton extends PureComponent {
     static propTypes = {
       accent: PropTypes.bool,
       accept: PropTypes.string,

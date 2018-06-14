@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
@@ -18,7 +18,7 @@ const POSITION = {
 };
 
 const factory = (MenuItem) => {
-  class Menu extends Component {
+  class Menu extends PureComponent {
     static propTypes = {
       active: PropTypes.bool,
       children: PropTypes.node,

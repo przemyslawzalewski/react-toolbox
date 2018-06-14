@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styleShape from 'react-style-proptype';
@@ -8,7 +8,7 @@ import rippleFactory from '../ripple/Ripple';
 import checkFactory from './Check';
 
 const factory = (Check) => {
-  class Checkbox extends Component {
+  class Checkbox extends PureComponent {
     static propTypes = {
       checked: PropTypes.bool,
       children: PropTypes.node,

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';
 import { RADIO } from '../identifiers';
@@ -6,7 +6,7 @@ import InjectRadioButton from './RadioButton';
 import isComponentOfType from '../utils/is-component-of-type';
 
 const factory = (RadioButton) => {
-  class RadioGroup extends Component {
+  class RadioGroup extends PureComponent {
     static propTypes = {
       children: PropTypes.node,
       className: PropTypes.string,

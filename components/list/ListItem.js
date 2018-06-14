@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';
 import { LIST } from '../identifiers';
@@ -7,7 +7,7 @@ import InjectListItemLayout from './ListItemLayout';
 import rippleFactory from '../ripple/Ripple';
 
 const factory = (ripple, ListItemLayout, ListItemContent) => {
-  class ListItem extends Component {
+  class ListItem extends PureComponent {
     static propTypes = {
       children: PropTypes.node,
       className: PropTypes.string,

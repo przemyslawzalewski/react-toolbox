@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
@@ -6,7 +6,7 @@ import { BUTTON } from '../identifiers';
 import rippleFactory from '../ripple/Ripple';
 
 const factory = (ripple) => {
-  class IconButton extends Component {
+  class IconButton extends PureComponent {
     static propTypes = {
       accent: PropTypes.bool,
       children: PropTypes.node,

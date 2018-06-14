@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
 import { OVERLAY } from '../identifiers';
 
-class Overlay extends Component {
+class Overlay extends PureComponent {
   static propTypes = {
     active: PropTypes.bool,
     children: PropTypes.node,

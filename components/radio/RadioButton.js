@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
@@ -7,7 +7,7 @@ import rippleFactory from '../ripple/Ripple';
 import radioFactory from './Radio';
 
 const factory = (Radio) => {
-  class RadioButton extends Component {
+  class RadioButton extends PureComponent {
     static propTypes = {
       checked: PropTypes.bool,
       children: PropTypes.node,

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
@@ -7,7 +7,7 @@ import InjectIconButton from '../button/IconButton';
 import InjectMenu from './Menu';
 
 const factory = (IconButton, Menu) => {
-  class IconMenu extends Component {
+  class IconMenu extends PureComponent {
     static propTypes = {
       children: PropTypes.node,
       className: PropTypes.string,

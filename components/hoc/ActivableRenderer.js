@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 const ActivableRendererFactory = (options = { delay: 500 }) =>
-  ActivableComponent => class ActivableRenderer extends Component {
+  ActivableComponent => class ActivableRenderer extends PureComponent {
     static propTypes = {
       active: PropTypes.bool.isRequired,
       children: PropTypes.node,

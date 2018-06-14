@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
@@ -29,7 +29,7 @@ const rippleFactory = (options = {}) => {
   } = { ...defaults, ...options };
 
   return (ComposedComponent) => {
-    class RippledComponent extends Component {
+    class RippledComponent extends PureComponent {
       static propTypes = {
         children: PropTypes.node,
         disabled: PropTypes.bool,

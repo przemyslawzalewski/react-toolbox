@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { themr } from 'react-css-themr';
@@ -6,7 +6,7 @@ import { MENU } from '../identifiers';
 import rippleFactory from '../ripple/Ripple';
 
 const factory = (ripple) => {
-  class MenuItem extends Component {
+  class MenuItem extends PureComponent {
     static propTypes = {
       caption: PropTypes.string,
       children: PropTypes.node,
