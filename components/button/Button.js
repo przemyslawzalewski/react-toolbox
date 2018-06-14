@@ -51,6 +51,7 @@ const factory = (ripple) => {
       neutral: true,
       primary: false,
       raised: false,
+      type: 'button',
     };
 
     getLevel = () => {
@@ -92,7 +93,7 @@ const factory = (ripple) => {
         raised,    // eslint-disable-line
         tagName = 'button',
         theme,
-        type,
+        type: buttonType,
         ...others
       } = this.props;
       const element = href ? 'a' : tagName;
@@ -108,6 +109,7 @@ const factory = (ripple) => {
         [theme.mini]: mini,
         [theme.inverse]: inverse,
       }, className);
+      const type = href ? undefined : buttonType;
 
       const props = {
         ...others,
