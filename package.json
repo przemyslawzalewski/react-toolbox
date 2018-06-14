@@ -25,10 +25,10 @@
     "toolkit"
   ],
   "dependencies": {
-    "classnames": "^2.2.5",
-    "ramda": "^0.25.0",
-    "react-css-themr": "^2.1.2",
-    "react-style-proptype": "^3.2.1"
+    "classnames": "2.2.6",
+    "ramda": "0.25.0",
+    "react-css-themr": "2.1.2",
+    "react-style-proptype": "3.2.1"
   },
   "devDependencies": {
     "@types/node": "^10.1.0",
@@ -82,7 +82,7 @@
     "style-loader": "^0.21.0"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 8"
   },
   "scripts": {
     "babel": "babel ./components --out-dir ./lib",
@@ -96,9 +96,8 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "classnames": "^2.2.0",
-    "prop-types": "^15.5.7",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "prop-types": "^15.6.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   }
 }
