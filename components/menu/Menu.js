@@ -199,16 +199,13 @@ const factory = (MenuItem) => {
     renderItems() {
       return React.Children.map(this.props.children, (item) => {
         if (!item) return item;
-        if (item.type === MenuItem) {
-          return React.cloneElement(item, {
-            ripple: item.props.ripple || this.props.ripple,
-            selected: typeof item.props.value !== 'undefined'
-              && this.props.selectable
-              && item.props.value === this.props.selected,
-            onClick: this.handleSelect.bind(this, item),
-          });
-        }
-        return React.cloneElement(item);
+        return React.cloneElement(item, {
+          ripple: item.props.ripple || this.props.ripple,
+          selected: typeof item.props.value !== 'undefined'
+            && this.props.selectable
+            && item.props.value === this.props.selected,
+          onClick: this.handleSelect.bind(this, item),
+        });
       });
     }
 
