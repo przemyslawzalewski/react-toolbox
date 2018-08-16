@@ -20,8 +20,10 @@ const factory = (Overlay, Button) => {
       [props.theme.active]: props.active,
     }, props.className);
 
+    const { portalProps = {} } = props;
+
     return (
-      <Portal className={props.theme.wrapper}>
+      <Portal className={props.theme.wrapper} {...portalProps}>
         <Overlay
           active={props.active}
           className={props.theme.overlay}
