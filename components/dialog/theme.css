@@ -1,7 +1,7 @@
-@import '../colors.css';
-@import '../variables.css';
-@import '../media.css';
-@import './config.css';
+@import "../colors.css";
+@import "../variables.css";
+@import "../media.css";
+@import "./config.css";
 
 .wrapper {
   align-items: center;
@@ -26,8 +26,7 @@
   opacity: 0;
   overflow: var(--overflow);
   transform: translateY(calc(-1 * var(--dialog-translate-y)));
-  transition:
-    opacity var(--animation-duration) var(--animation-curve-default),
+  transition: opacity var(--animation-duration) var(--animation-curve-default),
     transform var(--animation-duration) var(--animation-curve-default);
   transition-delay: var(--animation-delay);
 
@@ -148,7 +147,7 @@
 }
 
 .small {
-  min-width: 320px;
+  min-width: 288px;
   width: 480px;
 }
 
