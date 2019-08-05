@@ -104,14 +104,14 @@
   z-index: var(--z-index-high)
 }
 .ripple.rippleRestarting {
-  opacity: var(--ripple-final-opacity);
-  transition-property: none;
-}
+    opacity: var(--ripple-final-opacity);
+    transition-property: none;
+  }
 .ripple.rippleActive {
-  opacity: var(--ripple-final-opacity);
-  transition-property: transform;
-}
+    opacity: var(--ripple-final-opacity);
+    transition-property: transform;
+  }
 .ripple:not(.rippleActive):not(.rippleRestarting) {
-  opacity: 0;
-  transition-property: opacity, transform;
-}
+    opacity: 0;
+    transition-property: opacity, transform;
+  }

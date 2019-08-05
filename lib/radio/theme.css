@@ -391,31 +391,31 @@
   font-smoothing: antialiased;
   text-size-adjust: 100%;
   -webkit-touch-callout: none;
-}
+    }
 .radio::before {
-  background-color: var(--radio-inner-color);
-  border-radius: 50%;
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: scale(0);
-  transition: transform 0.2s var(--animation-curve-default);
-  width: 100%;
-}
+    background-color: var(--radio-inner-color);
+    border-radius: 50%;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: transform 0.2s var(--animation-curve-default);
+    width: 100%;
+  }
 .radio .ripple {
-  background-color: var(--radio-inner-color);
-  opacity: 0.3;
-  transition-duration: 650ms;
-}
+    background-color: var(--radio-inner-color);
+    opacity: 0.3;
+    transition-duration: 650ms;
+  }
 .radioChecked {
   border: calc(0.2 * var(--unit)) solid var(--radio-inner-color);
   composes: radio
 }
 .radioChecked::before {
-  transform: scale(0.65);
-}
+    transform: scale(0.65);
+  }
 .field {
   display: block;
   height: var(--radio-button-size);
@@ -443,25 +443,25 @@
   width: 0
 }
 .input:focus ~ .radio {
-  box-shadow: 0 0 0 var(--unit) var(--radio-focus-color);
-}
+    box-shadow: 0 0 0 var(--unit) var(--radio-focus-color);
+  }
 .input:focus ~ .radioChecked {
-  box-shadow: 0 0 0 var(--unit) var(--radio-checked-focus-color);
-}
+    box-shadow: 0 0 0 var(--unit) var(--radio-checked-focus-color);
+  }
 .disabled {
   composes: field
 }
 .disabled .text {
-  color: var(--radio-disabled-color);
-}
+    color: var(--radio-disabled-color);
+  }
 .disabled .radio {
-  border-color: var(--radio-disabled-color);
-  cursor: auto;
-}
+    border-color: var(--radio-disabled-color);
+    cursor: auto;
+  }
 .disabled .radioChecked {
-  border-color: var(--radio-disabled-color);
-  cursor: auto;
-}
+    border-color: var(--radio-disabled-color);
+    cursor: auto
+  }
 .disabled .radioChecked::before {
-  background-color: var(--radio-disabled-color);
-}
+      background-color: var(--radio-disabled-color);
+    }

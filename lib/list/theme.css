@@ -400,10 +400,10 @@
   font-smoothing: antialiased;
   text-size-adjust: 100%;
   -webkit-touch-callout: none;
-}
+    }
 .list + .divider {
-  margin-top: calc(-1 * var(--list-vertical-padding));
-}
+    margin-top: calc(-1 * var(--list-vertical-padding));
+  }
 .subheader {
   color: var(--color-text-secondary);
   font-size: var(--list-subheader-font-size);
@@ -419,22 +419,22 @@
   margin: calc(-1 * var(--list-divider-height)) 0 0
 }
 .divider.inset {
-  margin-left: var(--list-content-left-spacing);
-  margin-right: var(--list-horizontal-padding);
-}
+    margin-left: var(--list-content-left-spacing);
+    margin-right: var(--list-horizontal-padding);
+  }
 .listItem {
   position: relative
 }
 .listItem > [data-react-toolbox='ripple'] {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 .listItem .ripple {
-  color: var(--color-text-secondary);
-}
+    color: var(--color-text-secondary);
+  }
 .listItem ~ .divider {
-  margin-bottom: var(--list-vertical-padding);
-  margin-top: var(--list-vertical-padding);
-}
+    margin-bottom: var(--list-vertical-padding);
+    margin-top: var(--list-vertical-padding);
+  }
 .item {
   align-items: center;
   color: var(--color-text);
@@ -444,35 +444,35 @@
   position: relative;
   transition-duration: 0.28s;
   transition-property: background-color;
-  transition-timing-function: var(--animation-curve-default);
+  transition-timing-function: var(--animation-curve-default)
 }
 @media (hover: hover) {
-  .item.selectable:not(.disabled):hover {
-    background-color: var(--list-item-hover-color);
-    cursor: pointer;
+    .item.selectable:not(.disabled):hover {
+      background-color: var(--list-item-hover-color);
+      cursor: pointer;
+    }
   }
-}
 .item.disabled {
-  pointer-events: none;
-}
+    pointer-events: none
+  }
 .item.disabled:not(.checkboxItem) {
-  opacity: 0.5;
-}
+      opacity: 0.5;
+    }
 .item.disabled > .checkbox > [data-react-toolbox='label'] {
-  opacity: 0.5;
-}
+      opacity: 0.5;
+    }
 .left [data-react-toolbox='font-icon'] {
-  width: var(--list-item-icon-size);
-}
+    width: var(--list-item-icon-size);
+  }
 .left :last-child > [data-react-toolbox='font-icon'] {
-  margin-right: var(--list-item-right-icon-margin);
-}
+      margin-right: var(--list-item-right-icon-margin);
+    }
 .right > :last-child {
-  margin-right: 0;
-}
+    margin-right: 0;
+  }
 .right > :first-child {
-  margin-left: var(--list-horizontal-padding);
-}
+    margin-left: var(--list-horizontal-padding);
+  }
 .left,
 .right {
   align-items: center;
@@ -484,22 +484,22 @@
   margin: var(--list-item-child-margin) var(--list-horizontal-padding) var(--list-item-child-margin) 0
 }
 .itemAction > :not(button) {
-  padding: 0;
-}
+    padding: 0;
+  }
 .itemAction > [data-react-toolbox='font-icon'] {
-  color: var(--color-text-secondary);
-  font-size: var(--list-item-icon-font-size);
-}
+    color: var(--color-text-secondary);
+    font-size: var(--list-item-icon-font-size);
+  }
 .itemContentRoot {
   display: block;
   flex-grow: 1
 }
 .itemContentRoot.large {
-  display: flex;
-  flex-direction: column;
-  height: var(--list-item-min-height-legend);
-  justify-content: center;
-}
+    display: flex;
+    flex-direction: column;
+    height: var(--list-item-min-height-legend);
+    justify-content: center;
+  }
 .checkbox {
   align-items: center;
   cursor: pointer;
@@ -510,21 +510,21 @@
   width: 100%
 }
 .checkbox > [data-react-toolbox='check'] {
-  margin-right: var(--list-item-right-checkbox-margin);
-}
+    margin-right: var(--list-item-right-checkbox-margin);
+  }
 .checkbox > [data-react-toolbox='label'] {
-  padding-left: 0;
-}
+    padding-left: 0;
+  }
 .itemText {
   display: block
 }
 .itemText:not(.primary) {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-small);
-  padding-top: var(--list-item-legend-margin-top);
-  white-space: normal;
-}
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-small);
+    padding-top: var(--list-item-legend-margin-top);
+    white-space: normal;
+  }
 .itemText.primary {
-  color: var(--color-text);
-  font-size: var(--font-size-normal);
-}
+    color: var(--color-text);
+    font-size: var(--font-size-normal);
+  }

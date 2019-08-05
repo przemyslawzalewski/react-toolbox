@@ -374,6 +374,6 @@
   width: 100vw
 }
 .overlay.active {
-  opacity: var(--overlay-opacity);
-  pointer-events: all;
-}
+    opacity: var(--overlay-opacity);
+    pointer-events: all;
+  }

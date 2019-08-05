@@ -393,84 +393,84 @@
   font-smoothing: antialiased;
   text-size-adjust: 100%;
   -webkit-touch-callout: none;
-}
+    }
 .iconMenu .icon {
-  cursor: pointer;
-}
+    cursor: pointer;
+  }
 .menu {
   display: inline-block;
   position: relative
 }
 .menu.topLeft {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
+    left: 0;
+    position: absolute;
+    top: 0
+  }
 .menu.topLeft > .outline {
-  transform-origin: 0 0;
-}
+      transform-origin: 0 0;
+    }
 .menu.topRight {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+    position: absolute;
+    right: 0;
+    top: 0
+  }
 .menu.topRight > .outline {
-  transform-origin: 100% 0;
-}
+      transform-origin: 100% 0;
+    }
 .menu.bottomLeft {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-}
+    bottom: 0;
+    left: 0;
+    position: absolute
+  }
 .menu.bottomLeft > .outline {
-  transform-origin: 0 100%;
-}
+      transform-origin: 0 100%;
+    }
 .menu.bottomRight {
-  bottom: 0;
-  position: absolute;
-  right: 0;
-}
+    bottom: 0;
+    position: absolute;
+    right: 0
+  }
 .menu.bottomRight > .outline {
-  transform-origin: 100% 100%;
-}
+      transform-origin: 100% 100%;
+    }
 .menu:not(.static) {
-  pointer-events: none;
-  z-index: var(--z-index-higher);
-}
+    pointer-events: none;
+    z-index: var(--z-index-higher)
+  }
 .menu:not(.static) > .outline {
-  opacity: 0;
-  transform: scale(0);
-  transition:
+      opacity: 0;
+      transform: scale(0);
+      transition:
         transform var(--menu-expand-duration) var(--animation-curve-default),
         opacity var(--menu-fade-duration) var(--animation-curve-default);
-  will-change: transform;
-}
+      will-change: transform;
+    }
 .menu:not(.static) > .menuInner {
-  left: 0;
-  margin: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-}
+      left: 0;
+      margin: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+    }
 .menu:not(.static).rippled:not(.active) > .outline {
-  transition-delay: var(--menu-ripple-delay);
-}
+        transition-delay: var(--menu-ripple-delay);
+      }
 .menu:not(.static).rippled:not(.active) > .menuInner {
-  transition-delay: var(--menu-ripple-delay);
-}
+        transition-delay: var(--menu-ripple-delay);
+      }
 .menu:not(.static).active {
-  pointer-events: all;
-}
+      pointer-events: all
+    }
 .menu:not(.static).active > .outline {
-  opacity: 1;
-  transform: scale(1);
-}
+        opacity: 1;
+        transform: scale(1);
+      }
 .menu:not(.static).active > .menuInner {
-  opacity: 1;
-  transition:
+        opacity: 1;
+        transition:
           opacity var(--menu-fade-duration) var(--animation-curve-default),
           clip var(--menu-expand-duration) var(--animation-curve-default);
-}
+      }
 .outline {
   background-color: var(--menu-background-color);
   border-radius: var(--menu-outline-border-radius);
@@ -496,29 +496,29 @@
   height: var(--menu-item-height);
   overflow: hidden;
   padding: 0 var(--menu-item-padding);
-  position: relative;
+  position: relative
 }
 @media (hover: hover) {
-  .menuItem:not(.disabled):hover {
-    background-color: var(--menu-item-hover-background);
-    cursor: pointer;
+    .menuItem:not(.disabled):hover {
+      background-color: var(--menu-item-hover-background);
+      cursor: pointer;
+    }
   }
-}
 .menuItem.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
+    opacity: 0.5;
+    pointer-events: none;
+  }
 .menuItem.selected {
-  background-color: var(--menu-item-selected-background);
-  font-weight: 500;
-}
+    background-color: var(--menu-item-selected-background);
+    font-weight: 500;
+  }
 .menuItem .ripple {
-  color: var(--color-text-secondary);
-}
+    color: var(--color-text-secondary);
+  }
 .menuItem .icon {
-  font-size: var(--menu-item-icon-font-size);
-  width: var(--menu-item-icon-size);
-}
+    font-size: var(--menu-item-icon-font-size);
+    width: var(--menu-item-icon-size);
+  }
 .caption {
   flex-grow: 1;
   font-size: var(--font-size-normal);

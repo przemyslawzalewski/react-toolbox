@@ -428,26 +428,26 @@
   font-smoothing: antialiased;
   text-size-adjust: 100%;
   -webkit-touch-callout: none;
-}
+    }
 .drawer.active {
-  pointer-events: all;
-  transform: translateX(0);
-  transition-delay: var(--animation-delay);
-}
+    pointer-events: all;
+    transform: translateX(0);
+    transition-delay: var(--animation-delay);
+  }
 .drawer.right {
-  border-left: 1px solid var(--drawer-border-color);
-  right: 0;
-}
+    border-left: 1px solid var(--drawer-border-color);
+    right: 0
+  }
 .drawer.right:not(.active) {
-  transform: translateX(100%);
-}
+      transform: translateX(100%);
+    }
 .drawer.left {
-  border-right: 1px solid var(--drawer-border-color);
-  left: 0;
-}
+    border-right: 1px solid var(--drawer-border-color);
+    left: 0
+  }
 .drawer.left:not(.active) {
-  transform: translateX(calc(-1 * 100%));
-}
+      transform: translateX(calc(-1 * 100%));
+    }
 @media screen and (--larger-than-xs-viewport) {
   .drawer {
     width: var(--drawer-desktop-width);

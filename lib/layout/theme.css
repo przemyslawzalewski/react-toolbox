@@ -420,7 +420,7 @@
   font-smoothing: antialiased;
   text-size-adjust: 100%;
   -webkit-touch-callout: none;
-}
+    }
 .panel {
   left: 0;
   position: absolute;
@@ -428,460 +428,466 @@
   top: 0
 }
 .panel:not(.bodyScroll) {
-  height: 100vh;
-  max-height: 100vh;
-  overflow-y: scroll;
-}
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
 .sidebarDrawer,
 .navDrawerDrawer {
   z-index: var(--z-index-high)
 }
 .sidebarDrawer.pinned, .navDrawerDrawer.pinned {
-  box-shadow: none;
-}
+    box-shadow: none;
+  }
 .appbarInner,
 .panel {
   transition: var(--layout-side-transition);
 }
 .navDrawerPinned .appbarLeftIcon {
-  display: none;
-}
+    display: none;
+  }
 .navDrawerPinned .panel {
-  left: var(--drawer-mobile-width);
-}
-@media screen and (--larger-than-xs-viewport) {
-  .navDrawerPinned .panel {
-    left: var(--drawer-desktop-width);
+    left: var(--drawer-mobile-width);
   }
-}
+@media screen and (--larger-than-xs-viewport) {
+    .navDrawerPinned .panel {
+      left: var(--drawer-desktop-width);
+    }
+  }
 .navDrawerClipped .navDrawerWrapper {
-  position: relative;
-  z-index: var(--z-index-normal);
-}
-.sidebarPinned .appbarLeftIcon {
-  display: none;
-}
-.sidebarPinned .panel {
-  right: var(--drawer-mobile-width);
-}
-@media screen and (--larger-than-xs-viewport) {
-  .sidebarPinned .panel {
-    right: var(--drawer-desktop-width);
+    position: relative;
+    z-index: var(--z-index-normal);
   }
-}
+.sidebarPinned .appbarLeftIcon {
+    display: none;
+  }
+.sidebarPinned .panel {
+    right: var(--drawer-mobile-width);
+  }
+@media screen and (--larger-than-xs-viewport) {
+    .sidebarPinned .panel {
+      right: var(--drawer-desktop-width);
+    }
+  }
 .sidebarClipped .sidebarWrapper {
-  position: relative;
-  z-index: var(--z-index-normal);
-}
+    position: relative;
+    z-index: var(--z-index-normal);
+  }
 .sidebarWidth1 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth1 .sidebarDrawer {
+      .sidebarWidth1 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 1);
   }
-  .sidebarWidth1.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 1);
-  }
-}
+    .sidebarWidth1.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 1);
+    }
+    }
 .sidebarWidth2 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth2 .sidebarDrawer {
+      .sidebarWidth2 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 2);
   }
-  .sidebarWidth2.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 2);
-  }
-}
+    .sidebarWidth2.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 2);
+    }
+    }
 .sidebarWidth3 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth3 .sidebarDrawer {
+      .sidebarWidth3 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 3);
   }
-  .sidebarWidth3.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 3);
-  }
-}
+    .sidebarWidth3.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 3);
+    }
+    }
 .sidebarWidth4 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth4 .sidebarDrawer {
+      .sidebarWidth4 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 4);
   }
-  .sidebarWidth4.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 4);
-  }
-}
+    .sidebarWidth4.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 4);
+    }
+    }
 .sidebarWidth5 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth5 .sidebarDrawer {
+      .sidebarWidth5 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 5);
   }
-  .sidebarWidth5.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 5);
-  }
-}
+    .sidebarWidth5.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 5);
+    }
+    }
 .sidebarWidth6 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth6 .sidebarDrawer {
+      .sidebarWidth6 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 6);
   }
-  .sidebarWidth6.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 6);
-  }
-}
+    .sidebarWidth6.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 6);
+    }
+    }
 .sidebarWidth7 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth7 .sidebarDrawer {
+      .sidebarWidth7 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 7);
   }
-  .sidebarWidth7.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 7);
-  }
-}
+    .sidebarWidth7.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 7);
+    }
+    }
 .sidebarWidth8 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth8 .sidebarDrawer {
+      .sidebarWidth8 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 8);
   }
-  .sidebarWidth8.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 8);
-  }
-}
+    .sidebarWidth8.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 8);
+    }
+    }
 .sidebarWidth9 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth9 .sidebarDrawer {
+      .sidebarWidth9 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 9);
   }
-  .sidebarWidth9.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 9);
-  }
-}
+    .sidebarWidth9.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 9);
+    }
+    }
 .sidebarWidth10 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth10 .sidebarDrawer {
+      .sidebarWidth10 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 10);
   }
-  .sidebarWidth10.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 10);
-  }
-}
+    .sidebarWidth10.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 10);
+    }
+    }
 .sidebarWidth11 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth11 .sidebarDrawer {
+      .sidebarWidth11 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 11);
   }
-  .sidebarWidth11.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 11);
-  }
-}
+    .sidebarWidth11.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 11);
+    }
+    }
 .sidebarWidth12 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-viewport) {
-  .sidebarWidth12 .sidebarDrawer {
+      .sidebarWidth12 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 12);
   }
-  .sidebarWidth12.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 12);
-  }
-}
+    .sidebarWidth12.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 12);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth1 .sidebarDrawer {
+      .sidebarWidth1 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 1);
   }
-  .sidebarWidth1.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 1);
-  }
-}
+    .sidebarWidth1.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 1);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth1 .sidebarDrawer {
+      .sidebarWidth1 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 1);
   }
-  .sidebarWidth1.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 1);
-  }
-}
+    .sidebarWidth1.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 1);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth2 .sidebarDrawer {
+      .sidebarWidth2 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 2);
   }
-  .sidebarWidth2.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 2);
-  }
-}
+    .sidebarWidth2.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 2);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth2 .sidebarDrawer {
+      .sidebarWidth2 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 2);
   }
-  .sidebarWidth2.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 2);
-  }
-}
+    .sidebarWidth2.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 2);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth3 .sidebarDrawer {
+      .sidebarWidth3 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 3);
   }
-  .sidebarWidth3.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 3);
-  }
-}
+    .sidebarWidth3.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 3);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth3 .sidebarDrawer {
+      .sidebarWidth3 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 3);
   }
-  .sidebarWidth3.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 3);
-  }
-}
+    .sidebarWidth3.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 3);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth4 .sidebarDrawer {
+      .sidebarWidth4 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 4);
   }
-  .sidebarWidth4.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 4);
-  }
-}
+    .sidebarWidth4.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 4);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth4 .sidebarDrawer {
+      .sidebarWidth4 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 4);
   }
-  .sidebarWidth4.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 4);
-  }
-}
+    .sidebarWidth4.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 4);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth5 .sidebarDrawer {
+      .sidebarWidth5 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 5);
   }
-  .sidebarWidth5.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 5);
-  }
-}
+    .sidebarWidth5.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 5);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth5 .sidebarDrawer {
+      .sidebarWidth5 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 5);
   }
-  .sidebarWidth5.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 5);
-  }
-}
+    .sidebarWidth5.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 5);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth6 .sidebarDrawer {
+      .sidebarWidth6 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 6);
   }
-  .sidebarWidth6.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 6);
-  }
-}
+    .sidebarWidth6.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 6);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth6 .sidebarDrawer {
+      .sidebarWidth6 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 6);
   }
-  .sidebarWidth6.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 6);
-  }
-}
+    .sidebarWidth6.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 6);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth7 .sidebarDrawer {
+      .sidebarWidth7 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 7);
   }
-  .sidebarWidth7.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 7);
-  }
-}
+    .sidebarWidth7.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 7);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth7 .sidebarDrawer {
+      .sidebarWidth7 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 7);
   }
-  .sidebarWidth7.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 7);
-  }
-}
+    .sidebarWidth7.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 7);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth8 .sidebarDrawer {
+      .sidebarWidth8 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 8);
   }
-  .sidebarWidth8.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 8);
-  }
-}
+    .sidebarWidth8.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 8);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth8 .sidebarDrawer {
+      .sidebarWidth8 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 8);
   }
-  .sidebarWidth8.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 8);
-  }
-}
+    .sidebarWidth8.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 8);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (--landscape) {
-  .sidebarWidth9 .sidebarDrawer {
+      .sidebarWidth9 .sidebarDrawer {
     width: calc(var(--standard-increment-mobile) * 9);
   }
-  .sidebarWidth9.sidebarPinned .panel {
-    right: calc(var(--standard-increment-mobile) * 9);
-  }
-}
+    .sidebarWidth9.sidebarPinned .panel {
+      right: calc(var(--standard-increment-mobile) * 9);
+    }
+    }
 @media screen and (--larger-than-xs-viewport) and (orientation: portrait) {
-  .sidebarWidth9 .sidebarDrawer {
+      .sidebarWidth9 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 9);
   }
-  .sidebarWidth9.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 9);
-  }
-}
+    .sidebarWidth9.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 9);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth1 .sidebarDrawer {
+      .sidebarWidth1 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 1);
   }
-  .sidebarWidth1.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 1);
-  }
-}
+    .sidebarWidth1.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 1);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth2 .sidebarDrawer {
+      .sidebarWidth2 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 2);
   }
-  .sidebarWidth2.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 2);
-  }
-}
+    .sidebarWidth2.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 2);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth3 .sidebarDrawer {
+      .sidebarWidth3 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 3);
   }
-  .sidebarWidth3.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 3);
-  }
-}
+    .sidebarWidth3.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 3);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth4 .sidebarDrawer {
+      .sidebarWidth4 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 4);
   }
-  .sidebarWidth4.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 4);
-  }
-}
+    .sidebarWidth4.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 4);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth5 .sidebarDrawer {
+      .sidebarWidth5 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 5);
   }
-  .sidebarWidth5.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 5);
-  }
-}
+    .sidebarWidth5.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 5);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth6 .sidebarDrawer {
+      .sidebarWidth6 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 6);
   }
-  .sidebarWidth6.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 6);
-  }
-}
+    .sidebarWidth6.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 6);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth7 .sidebarDrawer {
+      .sidebarWidth7 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 7);
   }
-  .sidebarWidth7.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 7);
-  }
-}
+    .sidebarWidth7.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 7);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth8 .sidebarDrawer {
+      .sidebarWidth8 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 8);
   }
-  .sidebarWidth8.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 8);
-  }
-}
+    .sidebarWidth8.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 8);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth9 .sidebarDrawer {
+      .sidebarWidth9 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 9);
   }
-  .sidebarWidth9.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 9);
-  }
-}
+    .sidebarWidth9.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 9);
+    }
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-  .sidebarWidth10 .sidebarDrawer {
+      .sidebarWidth10 .sidebarDrawer {
     width: calc(var(--standard-increment-desktop) * 10);
   }
-  .sidebarWidth10.sidebarPinned .panel {
-    right: calc(var(--standard-increment-desktop) * 10);
-  }
-}
+    .sidebarWidth10.sidebarPinned .panel {
+      right: calc(var(--standard-increment-desktop) * 10);
+    }
+    }
 .sidebarWidth25 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 .sidebarWidth33 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 .sidebarWidth50 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 .sidebarWidth66 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 .sidebarWidth75 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 .sidebarWidth100 .sidebarDrawer {
-  width: 100%;
-}
+      width: 100%;
+    }
 @media screen and (--larger-than-sm-tablet-viewport) {
-    .sidebarWidth25 .panel {
-    right: calc(25 * 1%);
-  }
-    .sidebarWidth25 .sidebarDrawer {
-    width: calc(25 * 1%);
-  }
-    .sidebarWidth33 .panel {
-    right: calc(33 * 1%);
-  }
-    .sidebarWidth33 .sidebarDrawer {
-    width: calc(33 * 1%);
-  }
-    .sidebarWidth50 .panel {
-    right: calc(50 * 1%);
-  }
-    .sidebarWidth50 .sidebarDrawer {
-    width: calc(50 * 1%);
-  }
-    .sidebarWidth66 .panel {
-    right: calc(66 * 1%);
-  }
-    .sidebarWidth66 .sidebarDrawer {
-    width: calc(66 * 1%);
-  }
-    .sidebarWidth75 .panel {
-    right: calc(75 * 1%);
-  }
-    .sidebarWidth75 .sidebarDrawer {
-    width: calc(75 * 1%);
-  }
-    .sidebarWidth100 .panel {
-    right: calc(100 * 1%);
-  }
-    .sidebarWidth100 .sidebarDrawer {
-    width: calc(100 * 1%);
-  }
+      .sidebarWidth25 .panel {
+        right: calc(25 * 1%);
+      }
+
+      .sidebarWidth25 .sidebarDrawer {
+        width: calc(25 * 1%);
+      }
+      .sidebarWidth33 .panel {
+        right: calc(33 * 1%);
+      }
+
+      .sidebarWidth33 .sidebarDrawer {
+        width: calc(33 * 1%);
+      }
+      .sidebarWidth50 .panel {
+        right: calc(50 * 1%);
+      }
+
+      .sidebarWidth50 .sidebarDrawer {
+        width: calc(50 * 1%);
+      }
+      .sidebarWidth66 .panel {
+        right: calc(66 * 1%);
+      }
+
+      .sidebarWidth66 .sidebarDrawer {
+        width: calc(66 * 1%);
+      }
+      .sidebarWidth75 .panel {
+        right: calc(75 * 1%);
+      }
+
+      .sidebarWidth75 .sidebarDrawer {
+        width: calc(75 * 1%);
+      }
+      .sidebarWidth100 .panel {
+        right: calc(100 * 1%);
+      }
+
+      .sidebarWidth100 .sidebarDrawer {
+        width: calc(100 * 1%);
+      }
 }
