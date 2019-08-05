@@ -3,6 +3,13 @@ import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import styleShape from 'react-style-proptype';
 
+const getFullScreenElement = () =>
+  document.fullscreenElement ||
+  document.webkitFullscreenElement ||
+  document.mozFullScreenElement ||
+  document.msFullscreenElement ||
+  document.webkitCurrentFullScreenElement;
+
 class Portal extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
@@ -28,7 +35,8 @@ class Portal extends PureComponent {
       </div>
     );
 
-    const target = document.fullscreenElement || document.body;
+    const fullScreenElement = getFullScreenElement();
+    const target = fullScreenElement || document.body;
 
     return createPortal(body, target);
   }
