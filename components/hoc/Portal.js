@@ -28,8 +28,9 @@ class Portal extends PureComponent {
       </div>
     );
 
-    return isBrowser ? createPortal(body, document.body)
-      : null;
+    const target = document.fullscreenElement || document.body;
+
+    return createPortal(body, target);
   }
 }
 
